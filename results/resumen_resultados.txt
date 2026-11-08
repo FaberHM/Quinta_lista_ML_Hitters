@@ -1,0 +1,12 @@
+RESULTADOS CALCULADOS
+
+Partición: train=50, validation=70, test=143.
+Top 7 correlación: CRBI, CRuns, CHmRun, CHits, CAtBat, CWalks, Years.
+Variables con p<0.05: AtBat, CWalks, Assists.
+Mejor selección hacia adelante: k=3, variables=CRBI, Years, CRuns.
+
+                  Modelo  Variables  Riesgo train  Riesgo validación  Riesgo prueba                                                                                                                             Lista de variables
+     Todas las variables         19  68584.816405      320423.191896  394308.693406 AtBat, Hits, HmRun, Runs, RBI, Walks, Years, CAtBat, CHits, CHmRun, CRuns, CRBI, CWalks, League, Division, PutOuts, Assists, Errors, NewLeague
+       Mayor correlación          7 115487.248475      133035.612208  145923.291881                                                                                              CRBI, CRuns, CHmRun, CHits, CAtBat, CWalks, Years
+               Pruebas t          3 161221.361827      140085.187042  158772.472768                                                                                                                         AtBat, CWalks, Assists
+Selección hacia adelante          3 126982.323536      130618.198144  126939.595560                                                                                                                             CRBI, Years, CRuns
